@@ -107,7 +107,7 @@ img {
 
 .women .header__button-change:hover {
     background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
-    border-color: #3f0341;
+    border-color: #d6c4d6;
 }
 
 .women .header__button-change:focus {
@@ -125,7 +125,7 @@ img {
 
 .men .header__button-change:hover {
     background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
-    border-color: #06112e;
+    border-color: #d6c4d6;
 }
 
 .men .header__button-change:focus {
