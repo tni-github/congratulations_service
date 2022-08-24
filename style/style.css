@@ -52,6 +52,11 @@ button {
     cursor: pointer;
 }
 
+figure {
+    padding: 0;
+    margin: 0;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -101,10 +106,16 @@ img {
 }
 
 .women .header__button-change:hover {
+    background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+    border-color: #3f0341;
+}
+
+.women .header__button-change:focus {
     background-color: #88168a;
 }
 
 .women .header__button-change:active {
+    background-image: none;
     background-color: #3f0341;
 }
 
@@ -113,19 +124,21 @@ img {
 }
 
 .men .header__button-change:hover {
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
+    border-color: #06112e;
+}
+
+.men .header__button-change:focus {
     background-color: #304272;
 }
 
 .men .header__button-change:active {
+    background-image: none;
     background-color: #06112e;
 }
 
 .header__button-change:last-child {
     margin-right: 0;
-}
-
-.header__button-gender {
-    justify-content: right;
 }
 
 .header__button-gender {
@@ -139,6 +152,11 @@ img {
     background-size: 36px;
     margin-right: 20px;
     background-color: #ffffff;
+}
+
+.header__button-gender {
+    justify-content: right;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .header__button-gender:last-child {
@@ -160,6 +178,26 @@ img {
 
 .women .header__button-gender_women {
     border-color: #c300c7;
+}
+
+.header__button-gender:hover {
+    border-color: #7724ad;
+    background-color: #ddc0f5;
+}
+
+.header__button-gender:focus {
+    border-color: #101885;
+    background-color: #d3c0f1;
+}
+
+.men .header__button-gender:active {
+    border-color: #1178b2;
+    background-color: #a3a3f1;
+}
+
+.women .header__button-gender:active {
+    border-color: #c300c7;
+    background-color: #f790b8;
 }
 
 .card {
@@ -247,7 +285,8 @@ img {
     transition: fill 0.5s ease-in-out;
 }
 
-.men .footer__social a:hover svg {
+.men .footer__social a:hover svg,
+.men .footer__social a:focus svg {
     fill: #304272;
 }
 
@@ -255,7 +294,8 @@ img {
     fill: #06112e;
 }
 
-.women .footer__social a:hover svg {
+.women .footer__social a:hover svg,
+.women .footer__social a:focus svg {
     fill: #88168a;
 }
 
