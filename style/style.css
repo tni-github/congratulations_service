@@ -83,7 +83,8 @@ img {
     gap: 30px;
 }
 
-.header__button-change {
+.header__button-change,
+.card__button {
     width: 300px;
     height: 65px;
     border-radius: 30px;
@@ -97,42 +98,52 @@ img {
 }
 
 .header__button-change:hover,
-.header__button-change:active {
+.header__button-change:active,
+.card__button:hover,
+..card__button:active {
     transition: background-color 0.5s ease-in-out;
 }
 
-.women .header__button-change {
+.women .header__button-change,
+.women .card__button {
     background-color: #c300c7;
 }
 
-.women .header__button-change:hover {
+.women .header__button-change:hover,
+.women .card__button:hover {
     background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
     border-color: #d6c4d6;
 }
 
-.women .header__button-change:focus {
+.women .header__button-change:focus,
+.women .card__button:focus {
     background-color: #88168a;
 }
 
-.women .header__button-change:active {
+.women .header__button-change:active,
+.women .card__button:active {
     background-image: none;
     background-color: #3f0341;
 }
 
-.men .header__button-change {
+.men .header__button-change,
+.men .card__button {
     background-color: #1178b2;
 }
 
-.men .header__button-change:hover {
+.men .header__button-change:hover,
+.men .card__button:hover {
     background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
     border-color: #d6c4d6;
 }
 
-.men .header__button-change:focus {
+.men .header__button-change:focus,
+.men .card__button:focus {
     background-color: #304272;
 }
 
-.men .header__button-change:active {
+.men .header__button-change:active,
+.men .card__button:active {
     background-image: none;
     background-color: #06112e;
 }
@@ -209,6 +220,22 @@ img {
 
 .card__container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card__button {
+    min-width: 380px;
+    margin: 0;
+}
+
+.card__button>p {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    padding: 5px 0 0 0;
 }
 
 .card__wrapper {
